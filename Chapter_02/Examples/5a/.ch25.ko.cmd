@@ -1,0 +1,1 @@
+cmd_/usr/src/ldd/ldd3-1-examples/Chapter_02/Examples/5a/ch25.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /usr/src/ldd/ldd3-1-examples/Chapter_02/Examples/5a/ch25.ko /usr/src/ldd/ldd3-1-examples/Chapter_02/Examples/5a/ch25.o /usr/src/ldd/ldd3-1-examples/Chapter_02/Examples/5a/ch25.mod.o ;  true

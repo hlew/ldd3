@@ -1,0 +1,1 @@
+cmd_/usr/src/ldd/ldd3-1-examples/Chapter_02/Examples/5a/ch25.o := ld -m elf_x86_64   -r -o /usr/src/ldd/ldd3-1-examples/Chapter_02/Examples/5a/ch25.o /usr/src/ldd/ldd3-1-examples/Chapter_02/Examples/5a/sub.o /usr/src/ldd/ldd3-1-examples/Chapter_02/Examples/5a/main.o /usr/src/ldd/ldd3-1-examples/Chapter_02/Examples/5a/sub2.o 

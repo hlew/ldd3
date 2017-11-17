@@ -1,0 +1,1 @@
+Read never returns 0 so the read will loop once you've filled the buffer.
