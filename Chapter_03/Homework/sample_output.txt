@@ -1,0 +1,23 @@
+su -c "{ insmod ./HW.ko CDDparm=0;} || \
+	{ echo CDDparm is not set;} ";
+su -c "cat /proc/devices | grep CDD2;"
+243 CDD2
+su -c "mknod -m 666 /dev/CDD2 243 0;"
+mknod: missing operand after ‘0’
+Try 'mknod --help' for more information.
+make: [Makefile:25: load] Error 1 (ignored)
+gcc -o CDD2app CDD2app.c;
+gcc -o CDD2app_append CDD2app_append.c
+echo "Hello World" > /dev/CDD2;
+cat < /dev/CDD2;
+Hello World
+./CDD2app;
+Eur
+a!r
+lseek to 8 call here fails because O_TRUNC resets to file pos 0.
+echo "Hello World" > /dev/CDD2;	
+./CDD2app_append;
+Hel
+ Wl
+lseek call here succeeds to file position 8 because append.
+
